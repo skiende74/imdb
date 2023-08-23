@@ -2,6 +2,7 @@
 import React from "react";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 import { useTheme } from "next-themes";
+
 export default function DarkModeSwitch() {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;

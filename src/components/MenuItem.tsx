@@ -1,7 +1,9 @@
 import Link from "next/link";
 import React from "react";
 
-export default function MenuItem({ title, address, Icon }) {
+type Props = { title: string; address: string; Icon: any };
+
+const MenuItem = ({ title, address, Icon }: Props) => {
   return (
     <div>
       <Link href={address} className="mx-4 lg:mx-6 hover:text-amber-600">
@@ -10,4 +12,6 @@ export default function MenuItem({ title, address, Icon }) {
       </Link>
     </div>
   );
-}
+};
+
+export default MenuItem;
